@@ -10,6 +10,7 @@
 		061B6F16232D4CC800FB0B48 /* WavingView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061B6F0C232D4CC800FB0B48 /* WavingView.framework */; };
 		061B6F1B232D4CC800FB0B48 /* WavingViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061B6F1A232D4CC800FB0B48 /* WavingViewTests.swift */; };
 		061B6F1D232D4CC800FB0B48 /* WavingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 061B6F0F232D4CC800FB0B48 /* WavingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		061B6F27232D4DDE00FB0B48 /* WavingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061B6F26232D4DDE00FB0B48 /* WavingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		061B6F15232D4CC800FB0B48 /* WavingViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WavingViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		061B6F1A232D4CC800FB0B48 /* WavingViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WavingViewTests.swift; sourceTree = "<group>"; };
 		061B6F1C232D4CC800FB0B48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		061B6F26232D4DDE00FB0B48 /* WavingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WavingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				061B6F0F232D4CC800FB0B48 /* WavingView.h */,
 				061B6F10232D4CC800FB0B48 /* Info.plist */,
+				061B6F26232D4DDE00FB0B48 /* WavingView.swift */,
 			);
 			path = WavingView;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					061B6F0B232D4CC800FB0B48 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 					061B6F14232D4CC800FB0B48 = {
 						CreatedOnToolsVersion = 10.2;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				061B6F27232D4DDE00FB0B48 /* WavingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		061B6F21232D4CC800FB0B48 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.MostafaMazrouh.WavingView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +372,7 @@
 		061B6F22232D4CC800FB0B48 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +397,7 @@
 		061B6F24232D4CC800FB0B48 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WavingViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +415,7 @@
 		061B6F25232D4CC800FB0B48 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WavingViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
